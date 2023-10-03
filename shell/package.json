@@ -16,6 +16,7 @@
     "serve:a": "cd ../apps/app-a && npm run dev",
     "serve:b": "cd ../apps/app-b && npm run dev",
     "preview": "npm run build:all && concurrently \"cd ../apps/app-a/server && npm run start && cd ../../\" \"cd ../apps/app-b/server && npm run start && cd ../../shell\" \"astro dev\"",
+    "serve:shell": "npx astro dev",
     "init:all": "npm run install:all && npm run build:all"
   },
   "dependencies": {
