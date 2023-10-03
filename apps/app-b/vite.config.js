@@ -8,7 +8,7 @@ export default ({ command }) => ({
   preview: {
     port: 7200,
     open: true,
-  }, 
+  },
   build: {
     rollupOptions: {
       input: resolve(__dirname, "src/MicroFrontend.jsx"),
