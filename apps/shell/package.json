@@ -5,19 +5,7 @@
   "private": true,
   "scripts": {
     "build": "astro build",
-    "astro": "astro",
-    "prettier": "prettier --write .",
-    "install:products": "cd ../../apps/products && npm install && cd ./server && npm install && cd ../../../",
-    "install:profile": "cd ../../apps/profile && npm install && cd ./server && npm install && cd ../../../",
-    "install:all": "npm run install:products && npm run install:profile",
-    "build:products": "cd ../../apps/products && npm run build && cd ../../",
-    "build:profile": "cd ../../apps/profile && npm run build && cd ../../",
-    "build:all": "npm run build:products && npm run build:profile",
-    "serve:products": "cd ../../apps/products && npm run dev",
-    "serve:profile": "cd ../../apps/profile && npm run dev",
-    "preview": "npm run build:all && concurrently \"cd ../../apps/products/server && npm run start && cd ../../\" \"cd ../../apps/profile/server && npm run start && cd ../../apps/shell\" \"astro dev\"",
-    "serve:shell": "cd npx astro dev",
-    "init:all": "npm run install:all && npm run build:all"
+    "start": "astro dev"
   },
   "dependencies": {
     "@astrojs/react": "2.0.0",

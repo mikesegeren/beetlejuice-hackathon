@@ -1,9 +1,15 @@
 import React from "react";
 
-const App = () => (
-  <section>
-    <h1>User profile</h1>
-  </section>
-);
+const App = () => {
+  const showAlert = () => alert("Button clicked!");
+  return (
+    <section>
+      <h1>User profile</h1>
+      <button onClick={() => showAlert()} type="button">
+        Button in React
+      </button>
+    </section>
+  );
+};
 
 export default App;

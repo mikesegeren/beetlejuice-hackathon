@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-const App = () => (
-  <section>
-    <h1>Products</h1>
-  </section>
-);
+const App = () => {
+  return (
+    <section>
+      <h1>Products</h1>
+      <button onClick={() => alert("This button works")} type="button">
+        Button in React
+      </button>
+    </section>
+  );
+};
 
 export default App;
